@@ -16,6 +16,7 @@ const SocialMedia = () => {
                         src='/assets/secondarylogo.png'
                         width="100px"
                         height="51px"
+                        alt='This is the secondary logo of the page'
                     />
                 </a></li>
             </ul>
