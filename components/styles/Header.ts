@@ -34,13 +34,14 @@ export const Nav = styled.nav<ThemesInterface>`
         color: ${({ theme }) => theme.colorIcons.secondary}
     }
 `
-export const Logo = styled.div<ThemesInterface>`
+export const Logo = styled.a<ThemesInterface>`
     height: 100%;
     width: 100%;
     flex: 2;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 
     h3{
         color: ${({ theme }) => theme.colors.primary};

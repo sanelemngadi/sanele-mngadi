@@ -4,6 +4,9 @@ import { createGlobalStyle } from "styled-components";
 interface FontInterface {
     basic: string
 }
+interface ImagesInterface {
+    images: string
+}
 interface ColorsInterface {
     primary: string,
     secondary: string,
@@ -15,6 +18,7 @@ export interface ThemesInterface {
         fonts: FontInterface,
         colors: ColorsInterface,
         colorIcons: ColorsInterface,
+        images: ImagesInterface
     }
 }
 
@@ -31,6 +35,9 @@ export const theme = {
         primary: '#71ADF8',
         secondary: '#707070',
         tertiary: '#fff'
+    },
+    images: {
+        aboutBg: "/assets/aboutbg.png",
     }
 }
 
@@ -39,6 +46,7 @@ export const Global = createGlobalStyle < ThemesInterface>`
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
         transition: 0.5s;
     }
 

@@ -22,7 +22,7 @@ const Hero = () => {
                         into an amazing
                         experience.
 
-                        <CTX>
+                        <CTX href="#contact">
                             Hire me
                         </CTX>
                     </div>

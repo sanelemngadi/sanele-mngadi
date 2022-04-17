@@ -9,7 +9,7 @@ const Header = () => {
         <div>
             <Container>
                 <Wrapper>
-                    <Logo theme={theme}>
+                    <Logo href='/' theme={theme}>
                         <div>
                             <Image
                                 alt="Mountains"

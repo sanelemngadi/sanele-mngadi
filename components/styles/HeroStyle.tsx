@@ -2,13 +2,10 @@ import styled from "styled-components";
 import { ThemesInterface } from "../../themes/theme";
 
 export const HeroStyle = styled.div<ThemesInterface>`
-    //position: absolute;
-    //top: 4.5rem;
-    //left: 0;
-    //right: 0;
-    min-height: calc(100vh - 4.5rem - 2rem);
-    //width: 100vw;
+    min-height: calc(100vh - 4.5rem - 5rem);
     background-color: ${({ theme }) => theme.colors.primary};
+    display: flex;
+    align-items:center;
 `
 
 export const HeroWrapper = styled.div<ThemesInterface>`
@@ -17,7 +14,6 @@ export const HeroWrapper = styled.div<ThemesInterface>`
     grid-template-columns: 1fr;
     grid-template-areas: "one"
                         "two";
-
 
     .hero_image{
         width: 100%;
@@ -36,7 +32,7 @@ export const HeroWrapper = styled.div<ThemesInterface>`
         width: 100%;
         height: 100%;
         grid-area: two;
-        font-size: 2.5rem;
+        font-size: 2rem;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -45,8 +41,11 @@ export const HeroWrapper = styled.div<ThemesInterface>`
         color: ${({ theme }) => theme.colors.secondary};
         text-align: center;
     }
-
+    @media (min-width: 576px){
+        font-size: 2.5rem;
+    }
     @media (min-width: 768px){
+        font-size: 2.5rem;
         padding: 4rem 0;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "two one";
@@ -78,6 +77,11 @@ export const CTX = styled.a<ThemesInterface>`
     justify-content: center;
     margin: 1em 0;
     border-radius: .3rem;
+    text-decoration: none;
+    &:visited,
+    &:link{
+        color:${({ theme }) => theme.colors.secondary};
+    }
 `
 
 export const Socials = styled.div<ThemesInterface>`

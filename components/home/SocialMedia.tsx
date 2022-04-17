@@ -7,11 +7,11 @@ const SocialMedia = () => {
     return (
         <Socials>
             <ul>
-                <li><a href="#"><FaFacebookSquare size={32} color="#3b5998" /></a></li>
+                <li><a href="https://www.facebook.com/sanele.nkosinathi.50" target="_blank" rel="noreferrer"><FaFacebookSquare size={32} color="#3b5998" /></a></li>
                 <li><a href="#"><FaTwitterSquare size={32} color=" #00acee" /></a></li>
-                <li><a href="#"><FaLinkedin size={32} color="#0e76a8" /></a></li>
-                <li><a href="#"><FaInstagramSquare size={56} color="##fd1d1d" /></a></li>
-                <li><a href="#">
+                <li><a href="https://www.linkedin.com/in/sanele-mngadi-a29ba415a/" target="_blank" rel="noreferrer"><FaLinkedin size={32} color="#0e76a8" /></a></li>
+                <li><a href="https://www.instagram.com/omnesty/?hl=en" target="_blank" rel="noreferrer"><FaInstagramSquare size={56} color="##fd1d1d" /></a></li>
+                <li><a href="/" target="_blank">
                     <Image
                         src='/assets/secondarylogo.png'
                         width="100px"
